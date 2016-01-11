@@ -1,0 +1,16 @@
+.item-first, #tree {
+    margin-top: 15px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover, a:visited, .toggle-form {
+    text-decoration: none;
+}
+.form-group {
+    margin: 10px 0px;
+}
+.dataTable_wrapper {
+    display: none;
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Отчет в ЭТП</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css">        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+        <script src="bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+        
+        <script src="js/logic.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="panel panel-default item-first">
+                <div class="panel-heading">
+                    <a class="toggle-form" href="#">Отчет 1 <span class="label label-warning toggle-link">скрыть форму</span></a>
+                </div>
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Критерий поиска</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Критерий поиска</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label">Критерий поиска</label>
+                            <div class="col-sm-4">
+                                <input class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">                            
+                            <div class="col-sm-offset-4">
+                                <input id="hide-form" type="checkbox"> скрыть форму после получения отчета
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button class="col-sm-offset-4 col-sm-4 btn btn-primary get-report">Получить</button>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div class="dataTable_wrapper">
+                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                    <thead>
+                        <tr>
+                            <th>Клиент</th>
+                            <th>Покупатель</th>
+                            <th>ВП1</th>
+                            <th>ВП2</th>
+                            <th>Итог</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="odd gradeX">
+                            <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeC">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="odd gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                        <tr class="even gradeA">
+                                <td>Азовский рынок</td>
+                            <td>ИП Маслов В.А.</td>
+                            <td class="center">23400</td>
+                            <td class="center">23400</td>
+                            <td class="center">55555</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
