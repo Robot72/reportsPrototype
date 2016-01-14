@@ -14,3 +14,13 @@ a:hover, a:visited, .toggle-form {
 .dataTable_wrapper {
     display: none;
 }
+h1 {
+    background-color: #ccccff;
+}
+
+.report-menu {
+    /*background-color: #ff9e14;*/
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}

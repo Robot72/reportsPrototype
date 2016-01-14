@@ -19,12 +19,24 @@ Logic.getReport = function () {
         Logic.hideForm();
     }
     $('.dataTable_wrapper').show(1000);
+    $('#report-options').modal('hide');
     return false;
 }
+
+//Report style 2
+Logic.modalOptions = function () {
+    $('#report-options').modal('show');
+}
+
 //Event handlers:
 $(document).ready(function () {
+    //Style 1
     $(document).on('click', '.toggle-form', Logic.toggleForm);
     $(document).on('click', '.get-report', Logic.getReport);
     $('#hide-form').prop('checked', 'checked');
     $('#dataTables-example').dataTable();
-})
+    
+    //Style 2
+    $(document).on('click', '.report-options', Logic.modalOptions)
+    //$(document).on('click', '.report-')
+});
