@@ -24,3 +24,6 @@ h1 {
     margin: 0 auto;
     text-align: center;
 }
+.navbar-form {
+    margin-top: 0px;    
+}

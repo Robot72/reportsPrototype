@@ -26,6 +26,7 @@ Logic.getReport = function () {
 //Report style 2
 Logic.modalOptions = function () {
     $('#report-options').modal('show');
+    return false;
 }
 
 //Event handlers:
@@ -37,6 +38,7 @@ $(document).ready(function () {
     $('#dataTables-example').dataTable();
     
     //Style 2
-    $(document).on('click', '.report-options', Logic.modalOptions)
+    $(document).on('click', '.report-options', Logic.modalOptions);
+    $(document).on('click', '.show-additional', Logic.modalOptions);
     //$(document).on('click', '.report-')
 });
